@@ -36,6 +36,20 @@ Start the image:
 
 Once done, you can access your page by navigating your webbrowser to: http://localhost:4100
 
+The second opion is to copy the script "1startproject.sh" to your jekyll-project folder:
+
+Make the script executable
+
+`chmod +x 1startproject.sh`
+
+Copy the script to your jekyll-project folder:
+
+`cp 1startproject.sh /your/jekyll/project/folder`
+
+Execute the script by double-click at the icon or execute in the console:
+
+`/your/jekyll/project/folder/1startproject.sh`
+
 ## Build your project:
 
 If you want to build your jekyll-project, navigate to your project folder as described above and type the following command:
