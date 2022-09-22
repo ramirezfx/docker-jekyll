@@ -41,3 +41,11 @@ Once done, you can access your page by navigating your webbrowser to: http://loc
 If you want to build your project, navigate to your project folder as described above and type the following command:
 
 `sudo docker run --rm -it --volume="$PWD:/root/html" -p 4100:4000 ramirezfx/docker-jekyll:latest /bin/sh -c "cd /root/html && bundle exec jekyll build"`
+
+## Use the pre-build image instead of creaing your own:
+
+If you do not want to build your own image, you can use my pre-build image by navigating to the root of your project-folder and type:
+
+'sudo docker run --rm -it --volume="$PWD:/root/html" -p 4100:4000 ramirezfx/docker-jekyll:latest /bin/sh -c "cd /root/html && bundle exec jekyll serve --host 0.0.0.0"'
+
+Once done, you can access your page by navigating your webbrowser to: http://localhost:4100
