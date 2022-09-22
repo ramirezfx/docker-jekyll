@@ -1,6 +1,6 @@
 # docker-jekyll-4.2.2
 
-This will build a docker-image with the latest Jekyll-Version
+This will build a docker-image with Jekyll
 
 ## INSTALL
 
