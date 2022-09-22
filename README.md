@@ -34,3 +34,10 @@ Start the image:
 
 `sudo docker run --rm -it --volume="$PWD:/root/html" -p 4100:4000 docker-jekyll:4.2.2 /bin/sh -c "cd /root/html && bundle exec jekyll serve --host 0.0.0.0"`
 
+Once done, you can access your page by navigating your webbrowser to: http://localhost:4100
+
+## Build your project:
+
+If you want to build your project, navigate to your project folder as described above and type the following command:
+
+`sudo docker run --rm -it --volume="$PWD:/root/html" -p 4100:4000 ramirezfx/docker-jekyll:latest /bin/sh -c "cd /root/html && bundle exec jekyll build"`
