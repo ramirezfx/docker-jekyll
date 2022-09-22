@@ -30,12 +30,13 @@ Navigate to your jekyll-project folder you want to serve:
 
 `cd /your/jekyll/project/folder`
 
-Start the image:
+### Option1: Start the image:
 
 `sudo docker run --rm -it --volume="$PWD:/root/html" -p 4100:4000 docker-jekyll:4.2.2 /bin/sh -c "cd /root/html && bundle exec jekyll serve --host 0.0.0.0"`
 
 Once done, you can access your page by navigating your webbrowser to: http://localhost:4100
 
+### Option2: Usage of a start-script
 The second opion is to copy the script "1startproject.sh" to your jekyll-project folder:
 
 Make the script executable
