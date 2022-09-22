@@ -2,7 +2,7 @@
 
 This will build a docker-image with the latest Jekyll-Version
 
-# INSTALL
+## INSTALL
 
 If git is not installed, install git by typing:
 
@@ -10,4 +10,6 @@ If git is not installed, install git by typing:
 
 Clone this repo:
 
-`git clone 
+`git clone https://github.com/ramirezfx/docker-jekyll-4.2.2.git`
+
+## Build the Docker-Image:
