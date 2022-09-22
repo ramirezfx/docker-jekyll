@@ -1,6 +1,6 @@
 # docker-jekyll-4.2.2
 
-This will build a docker-image with Jekyll
+This will build a docker-image with Pre-installed Jekyll-4.2.2
 
 ## INSTALL
 
