@@ -42,7 +42,7 @@ If you want to build your jekyll-project, navigate to your project folder as des
 
 `sudo docker run --rm -it --volume="$PWD:/root/html" -p 4100:4000 ramirezfx/docker-jekyll:latest /bin/sh -c "cd /root/html && bundle exec jekyll build"`
 
-The build can be found inside the "html"-folder of the root of your jekyll-project.
+The build can be found inside the "_site"-folder of the root of your jekyll-project.
 
 ## Use the pre-build image instead of creaing your own:
 
