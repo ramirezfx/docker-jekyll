@@ -48,7 +48,7 @@ Copy the script to your jekyll-project folder:
 
 `cp 1startproject.sh /your/jekyll/project/folder`
 
-Execute the script by double-click at the icon or execute in the console:
+Execute the script by double-click at the icon or execute inside the terminal:
 
 `/your/jekyll/project/folder/1startproject.sh`
 
