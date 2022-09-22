@@ -13,3 +13,11 @@ Clone this repo:
 `git clone https://github.com/ramirezfx/docker-jekyll-4.2.2.git`
 
 ## Build the Docker-Image:
+
+Navigate to the project-folder
+
+`cd docker-jekyll-4.2.2`
+
+Build the image:
+
+`sudo docker build -t docker-jekyll:4.2.2 .`
