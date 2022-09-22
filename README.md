@@ -21,3 +21,16 @@ Navigate to the project-folder
 Build the image:
 
 `sudo docker build -t docker-jekyll:4.2.2 .`
+
+# USAGE:
+
+## Serve your project:
+
+Navigate to your jekyll-project folder you want to serve:
+
+`cd /your/jekyll/project/folder`
+
+Start the image:
+
+`sudo docker run --rm -it --volume="$PWD:/root/html" -p 4100:4000 docker-jekyll:4.2.2 /bin/sh -c "cd /root/html && bundle exec jekyll serve --host 0.0.0.0"`
+
