@@ -48,6 +48,6 @@ The build can be found inside the "html"-folder of the root of your jekyll-proje
 
 If you do not want to build your own image, you can use my pre-build image by navigating to the root of your project-folder and type:
 
-'sudo docker run --rm -it --volume="$PWD:/root/html" -p 4100:4000 ramirezfx/docker-jekyll:latest /bin/sh -c "cd /root/html && bundle exec jekyll serve --host 0.0.0.0"'
+`sudo docker run --rm -it --volume="$PWD:/root/html" -p 4100:4000 ramirezfx/docker-jekyll:latest /bin/sh -c "cd /root/html && bundle exec jekyll serve --host 0.0.0.0"`
 
 Once done, you can access your page by navigating your webbrowser to: http://localhost:4100
