@@ -60,7 +60,7 @@ If you want to build your jekyll-project, navigate to your project folder as des
 
 The build can be found inside the "_site"-folder of the root of your jekyll-project.
 
-## Use the pre-build image instead of creaing your own:
+## Use the pre-build image instead of creating your own:
 
 If you do not want to build your own image, you can use my pre-build image by navigating to the root of your project-folder and type:
 
