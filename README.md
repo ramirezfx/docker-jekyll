@@ -1,6 +1,6 @@
-# docker-jekyll-4.2.2
+# docker-jekyll
 
-This will build a docker-image with Pre-installed Jekyll-4.2.2
+This will build a docker-image with Pre-installed Jekyll
 
 ## INSTALL
 
@@ -10,17 +10,18 @@ If git is not installed, install git by typing:
 
 Clone this repo:
 
-`git clone https://github.com/ramirezfx/docker-jekyll-4.2.2.git`
+`git clone https://github.com/ramirezfx/docker-jekyll.git`
 
 ## Build the Docker-Image:
 
 Navigate to the project-folder
 
-`cd docker-jekyll-4.2.2`
+`cd docker-jekyll`
 
 Build the image:
 
-`sudo docker build -t docker-jekyll:4.2.2 .`
+`sudo docker build -t docker-jekyll:version .`
+Replace "version" with the jekyll-version
 
 # USAGE:
 
@@ -32,7 +33,7 @@ Navigate to your jekyll-project folder you want to serve:
 
 ### Option1: Start the image inside the terminal:
 
-`sudo docker run --rm -it --volume="$PWD:/root/html" -p 4100:4000 docker-jekyll:4.2.2 /bin/sh -c "cd /root/html && bundle exec jekyll serve --host 0.0.0.0"`
+`sudo docker run --rm -it --volume="$PWD:/root/html" -p 4100:4000 docker-jekyll:version /bin/sh -c "cd /root/html && bundle exec jekyll serve --host 0.0.0.0"`
 
 Once done, you can access your page by navigating your webbrowser to: http://localhost:4100
 
@@ -64,6 +65,6 @@ The build can be found inside the "_site"-folder of the root of your jekyll-proj
 
 If you do not want to build your own image, you can use my pre-build image by navigating to the root of your project-folder and type:
 
-`sudo docker run --rm -it --volume="$PWD:/root/html" -p 4100:4000 ramirezfx/docker-jekyll:latest /bin/sh -c "cd /root/html && bundle exec jekyll serve --host 0.0.0.0"`
+`sudo docker run --rm -it --volume="$PWD:/root/html" -p 4100:4000 ramirezfx/docker-jekyll:version /bin/sh -c "cd /root/html && bundle exec jekyll serve --host 0.0.0.0"`
 
 Once done, you can access your page by navigating your webbrowser to: http://localhost:4100
